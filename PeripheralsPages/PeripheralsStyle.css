@@ -2,14 +2,14 @@
 body{
     margin: 0;
     padding: 0;
+    
     font-family: 'Arial', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/PeripheralsPages/PeripherialsImg/c5527f47-def9-433c-9cce-23f286dbfea2_Front.webp');
+    background-image: linear-gradient(to bottom, #080808 0%, rgba(0, 0, 0, 0.815) 100%), 
+    url('/PeripheralsPages/PeripherialsImg/c5527f47-def9-433c-9cce-23f286dbfea2_Front.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #000;
     background-attachment: fixed;
-    backdrop-filter: blur(20px);
 }
 
 nav{
@@ -20,13 +20,10 @@ nav{
     gap: 0px;
 
     top: 0px;
-    width: 90%;
-    left: 5%;
     padding: 0;
     margin: 0;
     background-color: #333;
     backdrop-filter: blur(2px);
-    border-radius: 0 0 25px 25px;
     outline: 2px solid rgb(52, 2, 170);
     box-shadow: 10px 25px 100px rgba(63, 9, 189, 0.603);
     list-style-type: none;
@@ -117,13 +114,55 @@ nav .logo h3{
     margin: 0;
 }
 
-.hero-box {
-    height:100px;
-    margin-left:50px;
-    margin-top:100px;
-    text-align: left;
+.MainTitle{
+    display: flex;
+    height:200px;
+    text-align: Center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(224, 215, 215, 0.5);
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentBlock{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:700px;
+    width:100%;
+    background-color: rgba(240, 237, 237, 0.596);
+
+
+}
+
+.Peripherals-List{
+    display:flex;
+    width: 300px;
+    font-size: 30px;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: rgba(224, 215, 215, 0.5);
+    gap: 100px;
+    margin:0;
+}
+
+.ImageList{
+    display:flex;
+    height: 200px;
+    width: 1500px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: rgba(158, 73, 73, 0.5);
+
 }
 
 

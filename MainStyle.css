@@ -4,7 +4,7 @@ body{
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-image:
-        linear-gradient(to right, #080808 40%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(to right, #080808 20%, rgba(0, 0, 0, 0) 80%),
         url(/images/tai-bui-Q-xGz9NOVOE-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -76,24 +76,27 @@ section#The-Main-Page {
     box-sizing: border-box;
 }
 
+
 .hero-box {
     margin: 0;                    
     flex: 1 1 55%;              
 }
 
 .news {
-    flex: 0 1 1100px;         
+    flex: 0 1 1000px;         
     max-height: 100%;
     overflow-y: auto;             
     padding: 24px;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.900);
     border: 1px solid rgba(59, 130, 246, 0.35);
     border-radius: 16px;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
     color: white;
 }
 
 .news-title {
+    display: flex;
+    justify-content: center;
     margin: 0 0 16px;
     font-size: 20px;
     color: #3b82f6;
@@ -118,6 +121,14 @@ section#The-Main-Page {
     margin: 0;
     font-size: 14px;
     color: #ccc;
+    text-decoration: none;
+}
+
+.news-item p a {
+    margin: 0;
+    font-size: 14px;
+    color: #fdfdfdb4;
+    text-decoration: none;
 }
 
 nav{
@@ -138,6 +149,7 @@ nav{
     outline: 2px solid rgb(52, 2, 170);
     box-shadow: 10px 25px 100px rgba(63, 9, 189, 0.603);
     list-style-type: none;
+    z-index: 9999;
     }
 
 
@@ -159,6 +171,9 @@ nav a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
+
 nav .nav-icons ul {
     gap: 0px;
     padding:0 20px;
@@ -184,6 +199,29 @@ nav .logo a {
 nav .nav-links{
     padding-left: 100px;
     padding-right: 100px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+nav .nav-links a{
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+nav .nav-links a:hover{
+    color: #3b82f6;
+    background: linear-gradient(#3b82f6, #3b82f6) no-repeat;
+    background-size: calc(100% - 32px) 2px;
+    background-position: 16px calc(100% - 8px);
+}
+
+nav .nav-links a.active{
+    color: #3b82f6;
+    background: linear-gradient(#3b82f6, #3b82f6) no-repeat;
+    background-size: calc(100% - 32px) 2px;
+    background-position: 16px calc(100% - 8px);
+
 }
 
 nav .logo{
@@ -198,4 +236,12 @@ nav .logo h3{
     margin: 0;
 }
 
-
+footer {
+    position:absolute;
+    display: inline-block;
+    height: 300px;
+    width: 100%;
+    margin-top: 140px;
+    background-color: #333;
+    color: white;
+}

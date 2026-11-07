@@ -83,7 +83,7 @@ section#The-Main-Page {
 }
 
 .Components{
-    margin: 0 20px;
+    margin: 4% 20px;
     padding: 5%;
     height: 380px;
     width: 100%;
@@ -137,7 +137,7 @@ section#The-Main-Page {
 
 .newsAll{
     margin: 0 20px;
-    padding: 5%;
+    padding: 2% 5%;
     width: 100%;
     background-color: rgba(17, 17, 17, 0.65);
     border: 2px solid rgb(19, 1, 66);
@@ -154,8 +154,8 @@ section#The-Main-Page {
 }
 
 .news-title {
-    gap: 5px;
-    font-size: 2.5 rem;
+    gap: 3px;
+    font-size: 3rem;
     color: #3b82f6;
 }
 
